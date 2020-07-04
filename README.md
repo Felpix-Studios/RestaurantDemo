@@ -1,2 +1,2 @@
 # RestaurantDemo
-A simple website for a restaurant
+A simple website for a restaurant.
