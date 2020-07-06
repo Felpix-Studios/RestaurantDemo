@@ -121,6 +121,9 @@ nav{
 #contentStart{
 }
 .infoBlock{
+  overflow: hidden;
+  height: auto;
+  width: auto;
   margin: 0;
   padding: 3.75em 8.75em;
   display: grid;
@@ -134,12 +137,74 @@ nav{
   font-size: 4rem;
   margin: 0 0 1rem 0;
 }
-.infoImage{
-
+.info p{
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+.info img{
+  max-width: 60%;
+  max-height: 100%;
+  display: block;
+}
+#imgOne{
+  margin: 0 0 0 auto;
+}
+#imgTwo{
+  margin: 0 auto 0 0;
 }
 #infoOne{
   text-align:left ;
 }
+#infoOne img{
+  text-align: right;
+}
 #infoTwo{
   text-align:right ;
+}
+.button{
+  border-radius: 10px;
+  background-color: #F2855C;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: inline-block;
+  color:white;
+}
+#firstButton{
+  margin-right: 3.75rem;
+}
+@media only screen and (max-width: 768px) {
+  .infoBlock{
+    grid-template-columns: 100%;
+  }
+  #contactRow{
+    grid-template-columns: 100%;
+  }
+  .infoBlock{
+    
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  #firstButton{
+    margin: 0 auto 1rem auto;
+  }
+  .button{
+    margin: 0 auto 1rem auto;
+  }
+  #imgOne{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #imgTwo{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #infoTwo{
+    text-align: center;
+  }
+  .contactSection{
+    padding: 0 2rem 2rem 2rem;
+  }
 }
