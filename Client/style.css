@@ -1,0 +1,145 @@
+*{
+  font-family: Raleway;
+  font-weight: 300;
+}
+h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: auto;
+}
+nav{
+  background-color: #F2855C;
+  margin: 0;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+.navList{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  list-style-type: none;
+  text-decoration: none;
+}
+.navItem{
+  height: auto;
+  display: inline;
+  
+}
+.navItem a{
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  color: white;
+  padding: 24px 64px;
+  transition: ease-in-out 500ms;
+}
+.navItem a:hover{
+  
+}
+.fullLimit{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.hero{
+  width:100%;
+  height:100%;
+  text-align: center;
+  top:0px;
+  left:0px;
+  z-index:-1;
+  padding: 30vh 0 0 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-image:url('img/heroImage.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0% 33%;
+  color: white;
+}
+.hero h1{
+  z-index: 1;
+  margin: 0 auto 1rem auto;
+  font-family: Questa Grande;
+  font-size: 4rem;
+}
+.hero h3{
+  z-index: 1;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size:2rem;
+}
+.arrow {
+  margin-top: 10rem;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.contactBlock{
+  color: white;
+  background-color: #F2855C;
+  width: 100%;
+  height: auto;
+}
+#contactRow{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contactSection{
+  padding: 0 6rem 60px 6rem;
+}
+.contactBlock h1{
+  font-family: Questa Grande;
+  font-size: 4rem;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+.contactBlock p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+#contactOne{
+
+}
+#contactTwo{
+  
+}
+#contentStart{
+}
+.infoBlock{
+  margin: 0;
+  padding: 3.75em 8.75em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.info{
+
+}
+.info h3{
+  font-family: Questa Grande;
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+}
+.infoImage{
+
+}
+#infoOne{
+  text-align:left ;
+}
+#infoTwo{
+  text-align:right ;
+}
