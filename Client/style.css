@@ -12,13 +12,16 @@ html,body{
   padding: auto;
 }
 nav{
+  transition: 500ms;
   background-color: #F2855C;
   margin: 0;
   height: auto;
-  padding: 0;
   text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
 .navList{
+  transition: 500ms;
   margin: 0;
   padding: 0;
   height: auto;
@@ -26,6 +29,7 @@ nav{
   text-decoration: none;
 }
 .navItem{
+  transition: 500ms;
   height: auto;
   display: inline;
   
@@ -35,11 +39,18 @@ nav{
   display: inline-block;
   font-weight: 300;
   color: white;
+  margin: 0;
   padding: 24px 64px;
-  transition: ease-in-out 500ms;
+  transition: 500ms;
+}
+i{
+  color: white;
 }
 .navItem a:hover{
   
+}
+.navbar .icon{
+  display: none;
 }
 .fullLimit{
   width: 100%;
@@ -142,8 +153,9 @@ nav{
   font-size: 1.25rem;
 }
 .info img{
-  max-width: 60%;
+  max-width: 80%;
   max-height: 100%;
+  min-height: 80%;
   display: block;
 }
 #imgOne{
@@ -167,13 +179,14 @@ nav{
   font-size: 1.25rem;
   text-align: center;
   padding: 1rem 2rem;
+  margin: 0 0 1rem 0;
   display: inline-block;
   color:white;
 }
 #firstButton{
   margin-right: 3.75rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .infoBlock{
     grid-template-columns: 100%;
   }
@@ -206,5 +219,31 @@ nav{
   }
   .contactSection{
     padding: 0 2rem 2rem 2rem;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navbar a.icon{
+    display: block;
+    float: right;
+    padding: 1rem 2rem 1rem 0;
+    font-size: 2rem;
+  }
+  .navbar .responsive .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar .navItem a{display: none;}
+  .navbar.responsive .navItem a{
+    font-size: 1.5rem ;
+    float: none;
+    display: block;
+    text-align: center;
+  } 
+  .navItem{
+    width: 100%;
   }
 }
